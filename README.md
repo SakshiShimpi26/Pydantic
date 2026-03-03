@@ -211,12 +211,9 @@ FastAPI combines:
 
 It is especially powerful for:
 
--   ML/AI APIs\
--   Production backend services\
--   Microservices\
+-   ML/AI APIs
+-   Production backend services
+-   Microservices
 -   High-concurrency applications
 
 ------------------------------------------------------------------------
-
-⭐ If you found this helpful, feel free to explore and extend the
-project!
