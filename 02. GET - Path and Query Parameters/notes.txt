@@ -1,0 +1,67 @@
+What are path params ?
+
+Path params are dynamic segment of a URL path used to identify a specific resource.
+
+########################################################################################
+Path() is used in FastAPI to define rules and extra info for path parameters.
+It helps with validation and also improves API documentation.
+
+title → Short name shown in API docs
+description → Explains what the parameter is for
+example → Example value shown in docs
+
+ge → Greater than or equal to a value
+gt → Greater than a value
+le → Less than or equal to a value
+lt → Less than a value
+min_length → Minimum number of characters allowed (for strings)
+max_length → Maximum number of characters allowed (for strings)
+regex → Pattern the value must match (format validation)
+
+########################################################################################
+
+HTTPException is used in FastAPI to handle errors properly.
+
+Instead of crashing or returning wrong data,
+we raise HTTPException to send a clear error response.
+status_code → HTTP error code (like 404 = not found, 400 = bad request)
+detail → Message explaining what went wrong
+headers → Optional extra response headers
+This helps the client understand the error clearly.
+
+########################################################################################
+
+# Query parameters are optional values added to the URL.
+# They send extra information to the server without changing the endpoint.
+
+# Example:
+# /patients?city=Pun&sort_by=age
+# ? starts query parameters
+# key=value format
+# & separates multiple parameters
+
+# Used for:
+# filtering data
+# sorting data
+# searching
+# pagination
+
+########################################################################################
+
+# Query() in FastAPI helps define and validate query parameters.
+
+# It is used to:
+# set default values
+# apply validation rules
+# add documentation info (title, description, examples)
+
+# default → default value if user does not provide one
+# title → shown in API documentation
+# description → explains the parameter
+# example → sample value
+
+# min_length / max_length → string length validation
+# ge, gt, le, lt → numeric range validation
+# regex → enforce specific format
+
+########################################################################################
